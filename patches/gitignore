@@ -1,5 +1,5 @@
 Bottom: 31a3770b88aa41bb31ea86bdd81e590923091402
-Top:    31a3770b88aa41bb31ea86bdd81e590923091402
+Top:    c78e1bd918864575dbe9af8d9dd5fba21aa266c8
 Author: scott snyder <sss@karma>
 Date:   2020-02-12 09:32:28 -0500
 
@@ -8,4 +8,10 @@ Date:   2020-02-12 09:32:28 -0500
 
 ---
 
-
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+index 0000000..b25c15b
+--- /dev/null
++++ b/.gitignore
+@@ -0,0 +1 @@
++*~
