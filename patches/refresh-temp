@@ -1,0 +1,24 @@
+Bottom: 3ba8220bd4de0156c4768022eba4c53d6557504f
+Top:    9620d36b724f3debf0b60c3b8d0b9ecccee88143
+Author: scott snyder <sss@karma>
+Date:   2020-02-12 09:31:44 -0500
+
+Refresh of LibDeps
+
+---
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index c72fd9d..4626b89 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -142,5 +142,6 @@ DISPLAY_STD_VARIABLES()
+ 
+ 
+ # generate and install following configuration files
+-GENERATE_PACKAGE_CONFIGURATION_FILES( KalDetConfig.cmake KalDetConfigVersion.cmake KalDetLibDeps.cmake )
++GENERATE_PACKAGE_CONFIGURATION_FILES( KalDetConfig.cmake KalDetConfigVersion.cmake )
+ 
++INSTALL (FILES ${PROJECT_SOURCE_DIR}/cmake/KalDetLibDeps.cmake DESTINATION lib/cmake )
+diff --git a/cmake/KalDetLibDeps.cmake b/cmake/KalDetLibDeps.cmake
+new file mode 100644
+index 0000000..e69de29
