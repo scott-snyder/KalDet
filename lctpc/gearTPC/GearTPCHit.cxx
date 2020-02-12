@@ -58,7 +58,7 @@ GearTPCHit::~GearTPCHit()
 Int_t GearTPCHit::Compare(const TObject *obj) const
 {
   Double_t me  = GetSortingPolicy();
-  Double_t you = dynamic_cast<const GearTPCHit *>(obj)->GetSortingPolicy();
+  Double_t you = dynamic_cast<const GearTPCHit &>(*obj).GetSortingPolicy();
   if (you == 0) 
   {
     streamlog_out(ERROR) << "Cannot compare GearTPCHit to something which is not a"
