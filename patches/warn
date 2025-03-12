@@ -1,6 +1,10 @@
 Bottom: 5997ba8e1efd1ea039225b8ffe4b75a33a95700c
 Top:    74b0a5671108a9273e76b1d61040d63eb91e5ccb
 Author: scott snyder <sss@karma>
-Date:   2025-03-12 15:33:37 -0400
+Date:   2025-03-12 15:43:42 -0400
 
-Fix compilation warnings.
+Fix a number of compilation warnings:
+
+ - Avoid local variables with the same name as a class member.
+ - Fix for variables that are unused when compiling with NDEBUG.
+ - Fix some warnings about misleading indentation.
