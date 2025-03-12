@@ -481,7 +481,7 @@ void ILDFTDKalDetector::setupGearGeom( const gear::GearMgr& gearMgr ){
     }
     
     // there should be no gap between support and sensitive
-
+    
 #ifndef NDEBUG
     for( int iPetal=0; iPetal< _FTDgeo[disk].nPetals; iPetal++){
       
