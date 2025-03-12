@@ -389,8 +389,8 @@ void ILDFTDKalDetector::setupGearGeom( const gear::GearMgr& gearMgr ){
   //           if this is not done then the exposed areas of the support would leave a carbon - air boundary,
   //           which if traversed in the reverse direction to the next boundary then the track be propagated through carbon
   //           for a significant distance 
-
-#ifndef NDEBUG  
+  
+#ifndef NDEBUG
   double eps = 1.0e-08;
 #endif
   
