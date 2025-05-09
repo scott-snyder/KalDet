@@ -29,7 +29,7 @@ TKalMatrix ILDPlanarStripHit::XvToMv(const TVector3 &xv, Double_t /*t0*/) const
 
 /** Print Debug information */
 
-void ILDPlanarStripHit::DebugPrint(Option_t *) const
+void ILDPlanarStripHit::DebugPrint(Option_t *, Int_t) const
 {
   cerr << "------------------- Site Info -------------------------" << endl;
   
