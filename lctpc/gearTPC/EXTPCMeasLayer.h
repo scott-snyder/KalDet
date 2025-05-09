@@ -56,6 +56,9 @@ public:
    */
   Int_t GetLayerID () const;
 
+  // Avoid warnings about hiding base class method.
+  using TVMeasLayer::XvToMv;
+
   /** Deprecated XvToMv which in addition to the position takes a side. 
    *  Side is ignored and XvToMv without the side is called.
    * \attention Do not programme against this when using the GearTPC interface. 
