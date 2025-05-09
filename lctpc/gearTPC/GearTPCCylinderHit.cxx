@@ -88,7 +88,7 @@ TKalMatrix GearTPCCylinderHit::XvToMv(const TVector3 &xv, Double_t t0) const
   return h;
 }
 
-void GearTPCCylinderHit::DebugPrint(Option_t *) const
+void GearTPCCylinderHit::DebugPrint(Option_t *, Int_t) const
 {
   cerr << "------------------- Site Info -------------------------" << endl;
 

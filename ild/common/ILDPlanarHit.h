@@ -28,10 +28,10 @@ public:
   // TVTrackHit's pure virtuals that must be implemented
   
   /** Global to Local coordinates */
-  virtual TKalMatrix XvToMv (const TVector3 &xv, Double_t t0) const;
+  virtual TKalMatrix XvToMv (const TVector3 &xv, Double_t t0) const override;
   
   /** Print Debug information */
-  virtual void       DebugPrint(Option_t *opt = "")           const;
+  virtual void       DebugPrint(Option_t *opt = "", Int_t nc = 5)           const override;
 
   using TKalMatrix::DebugPrint;
   
