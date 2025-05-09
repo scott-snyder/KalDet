@@ -1,0 +1,9 @@
+Bottom: 74b0a5671108a9273e76b1d61040d63eb91e5ccb
+Top:    74b0a5671108a9273e76b1d61040d63eb91e5ccb
+Author: sss <sss@karma>
+Date:   2025-05-09 11:07:46 -0400
+
+Fix clang warnings.
+
+Hiding virtual methods from base classes.
+Unused class members.
