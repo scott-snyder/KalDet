@@ -43,11 +43,13 @@ public:
   /** Implementation of the space vector (xv) to measurement vector (mv) calculation
    *  for a cylindrical hit.
    */
-  virtual TKalMatrix XvToMv(const TVector3 &xv, Double_t t0) const;
-  
+  virtual TKalMatrix XvToMv(const TVector3 &xv, Double_t t0) const override;
+
   /** Print some debug output to std err.
    */
-  virtual void       DebugPrint(Option_t *opt = "")          const;
+  virtual void       DebugPrint(Option_t *opt = "", Int_t nc = 5) const override;
+  using TKalMatrix::DebugPrint;
+  
 };
 
 }//namespace kaldet
