@@ -1,7 +1,7 @@
 ######################################################
 # cmake file for building KalDet libraries
 # @author Jan Engels, DESY
-CMAKE_MINIMUM_REQUIRED(VERSION 2.6 FATAL_ERROR)
+CMAKE_MINIMUM_REQUIRED(VERSION 3.10 FATAL_ERROR)
 ######################################################
 
 
@@ -16,6 +16,7 @@ SET( KalDet_VERSION_MINOR 14 )
 SET( KalDet_VERSION_PATCH 1 )
 
 cmake_policy(SET CMP0008 NEW)
+cmake_policy(SET CMP0074 NEW)
 
 
 ### DEPENDENCIES ###########################################################
