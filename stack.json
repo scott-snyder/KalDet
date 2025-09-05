@@ -1,13 +1,14 @@
 {
   "version": 5,
-  "prev": "8d9db12c271888d1550af488d7ce9394cc941307",
-  "head": "9d598a8001c9c76d795d33eab6a2b1b78276d4f0",
+  "prev": "f783883f193f9d53a0c038f60f8d8bcd069bc435",
+  "head": "dc55ca7c5e568884ef3e30c3588936042d2ed5f2",
   "applied": [
     "gitignore",
     "LibDeps",
     "warn",
     "clang",
-    "cmakewarn"
+    "cmakewarn",
+    "unused"
   ],
   "unapplied": [],
   "hidden": [],
@@ -23,6 +24,9 @@
     },
     "gitignore": {
       "oid": "ec0d51e07c2b4898e71257dd027e052adffe1c13"
+    },
+    "unused": {
+      "oid": "dc55ca7c5e568884ef3e30c3588936042d2ed5f2"
     },
     "warn": {
       "oid": "aa76bd4fa0842564c62b0e283a4e45de7214981e"
