@@ -236,7 +236,7 @@ TVector3 ILDSegmentedDiscMeasLayer::HitToXv(const TVTrackHit &vht) const
 
 }
 
-void ILDSegmentedDiscMeasLayer::CalcDhDa(const TVTrackHit &vht,
+void ILDSegmentedDiscMeasLayer::CalcDhDa(const TVTrackHit &/*vht*/,
                                          const TVector3   &xxv,
                                          const TKalMatrix &dxphiada,
                                          TKalMatrix &H)  const
@@ -330,7 +330,7 @@ Int_t ILDSegmentedDiscMeasLayer::CalcXingPointWith(const TVTrack  &hel,
                                                     TVector3 &xx,
                                                     Double_t &phi,
                                                     Int_t     mode,
-                                                    Double_t  eps) const{
+                                                    Double_t  /*eps*/) const{
 
   //  streamlog_out(DEBUG0) << "ILDSegmentedDiscMeasLayer::CalcXingPointWith" << std::endl;
   

@@ -88,7 +88,7 @@ TKalMatrix GearTPCCylinderMeasLayer::XvToMv(const TVector3 &xv) const
   return mv;
 }
 
-TKalMatrix GearTPCCylinderMeasLayer::XvToMv(const TVTrackHit &vhit,
+TKalMatrix GearTPCCylinderMeasLayer::XvToMv(const TVTrackHit &/*vhit*/,
                                   const TVector3   &xv) const
 {
   return XvToMv(xv);

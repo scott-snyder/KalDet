@@ -44,7 +44,7 @@ public:
   // Parrent's pure virtuals that must be implemented
   
   /** Global to Local coordinates */
-  virtual TKalMatrix XvToMv    (const TVTrackHit &ht,
+  virtual TKalMatrix XvToMv    (const TVTrackHit &/*ht*/,
                                 const TVector3   &xv) const 
   { return this->XvToMv(xv); }
   
@@ -82,7 +82,7 @@ public:
                                        TVector3 &xx,
                                        Double_t &phi,
                                        Int_t    &CellID,
-                                       Int_t     mode,
+                                       Int_t     /*mode*/,
                                        Double_t  eps = 1.e-8) const {
     
     CellID = this->getCellIDs()[0]; // not multilayer
