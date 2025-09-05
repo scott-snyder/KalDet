@@ -61,7 +61,7 @@ TKalMatrix ILDConeMeasLayer::XvToMv(const TVTrackHit &,
    return XvToMv(xv);
 }
 
-TVector3 ILDConeMeasLayer::HitToXv(const TVTrackHit &vht) const
+TVector3 ILDConeMeasLayer::HitToXv(const TVTrackHit &/*vht*/) const
 {
 //    const EXBPConeHit &ht = dynamic_cast<const EXBPConeHit &>(vht);
 // 
@@ -76,7 +76,7 @@ TVector3 ILDConeMeasLayer::HitToXv(const TVTrackHit &vht) const
    return TVector3(0.,0.,0.);
 }
 
-void ILDConeMeasLayer::CalcDhDa(const TVTrackHit &vht,
+void ILDConeMeasLayer::CalcDhDa(const TVTrackHit &/*vht*/,
                                  const TVector3   &xxv,
                                  const TKalMatrix &dxphiada,
                                        TKalMatrix &H)  const

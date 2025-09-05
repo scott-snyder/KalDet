@@ -172,7 +172,7 @@ TVector3 ILDSegmentedDiscStripMeasLayer::HitToXv(const TVTrackHit &vht) const
   return TVector3(x,y,z);
 }
 
-void ILDSegmentedDiscStripMeasLayer::CalcDhDa(const TVTrackHit &vht,
+void ILDSegmentedDiscStripMeasLayer::CalcDhDa(const TVTrackHit &/*vht*/,
                                          const TVector3   &xxv,
                                          const TKalMatrix &dxphiada,
                                          TKalMatrix &H)  const
