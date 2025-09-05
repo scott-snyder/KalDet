@@ -39,7 +39,7 @@ FIND_PACKAGE( streamlog REQUIRED )
 FOREACH( pkg Marlin ROOT KalTest LCIO GEAR streamlog)
 
   IF( ${pkg}_FOUND )
-    INCLUDE_DIRECTORIES( SYSTEM ${${pkg}_INCLUDE_DIRS} )
+    INCLUDE_DIRECTORIES( ${${pkg}_INCLUDE_DIRS} )
     LINK_LIBRARIES( ${${pkg}_LIBRARIES} )
   ENDIF()
 
