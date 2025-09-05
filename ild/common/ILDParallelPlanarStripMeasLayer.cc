@@ -100,8 +100,8 @@ TVector3 ILDParallelPlanarStripMeasLayer::HitToXv(const TVTrackHit &vht) const
 
 }
 
-void ILDParallelPlanarStripMeasLayer::CalcDhDa(const TVTrackHit &vht,
-                             const TVector3   &xxv,
+void ILDParallelPlanarStripMeasLayer::CalcDhDa(const TVTrackHit &/*vht*/,
+                             const TVector3   &/*xxv*/,
                              const TKalMatrix &dxphiada,
                              TKalMatrix &H)  const
 {

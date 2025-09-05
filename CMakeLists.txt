@@ -52,7 +52,7 @@ INCLUDE_DIRECTORIES( ${CMAKE_CURRENT_SOURCE_DIR} )
  
 
 #fg: silence the following warnings
-ADD_DEFINITIONS( "-Wno-effc++ -Wno-unused-parameter" )
+ADD_DEFINITIONS( "-Wno-effc++ " )
 
 
 # macros for generating root dict sources with rootcint

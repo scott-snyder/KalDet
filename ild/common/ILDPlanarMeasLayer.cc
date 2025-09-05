@@ -155,8 +155,8 @@ TVector3 ILDPlanarMeasLayer::HitToXv(const TVTrackHit &vht) const
   return TVector3(x,y,z);
 }
 
-void ILDPlanarMeasLayer::CalcDhDa(const TVTrackHit &vht,
-                                  const TVector3   &xxv,
+void ILDPlanarMeasLayer::CalcDhDa(const TVTrackHit &/*vht*/,
+                                  const TVector3   &/*xxv*/,
                                   const TKalMatrix &dxphiada,
                                   TKalMatrix &H)  const
 {

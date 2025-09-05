@@ -81,7 +81,7 @@ TKalMatrix ILDPolygonBarrelMeasLayer::XvToMv(const TVector3 &xv) const
 }
 
 
-TVector3 ILDPolygonBarrelMeasLayer::HitToXv(const TVTrackHit &vht) const
+TVector3 ILDPolygonBarrelMeasLayer::HitToXv(const TVTrackHit &/*vht*/) const
 {
   
   //SJA:FIXME: in order to use real local coordinates we would have to get the CELLID from the ILDPlanarHit, this would tell us in which segment the hit was in 
@@ -93,10 +93,10 @@ TVector3 ILDPolygonBarrelMeasLayer::HitToXv(const TVTrackHit &vht) const
   
 }
 
-void ILDPolygonBarrelMeasLayer::CalcDhDa(const TVTrackHit &vht,
-                                         const TVector3   &xxv,
-                                         const TKalMatrix &dxphiada,
-                                         TKalMatrix &H)  const
+void ILDPolygonBarrelMeasLayer::CalcDhDa(const TVTrackHit &/*vht*/,
+                                         const TVector3   &/*xxv*/,
+                                         const TKalMatrix &/*dxphiada*/,
+                                         TKalMatrix &/*H*/)  const
 {
 
     //SJA:FIXME: in order to use real local coordinates we would have to get the CELLID from the ILDPlanarHit, this would tell us in which segment the hit was in 
@@ -137,7 +137,7 @@ Bool_t ILDPolygonBarrelMeasLayer::IsOnSurface(const TVector3 &xx) const
 }
 
 
-ILDVTrackHit* ILDPolygonBarrelMeasLayer::ConvertLCIOTrkHit( EVENT::TrackerHit* trkhit) const {
+ILDVTrackHit* ILDPolygonBarrelMeasLayer::ConvertLCIOTrkHit( EVENT::TrackerHit* /*trkhit*/) const {
   
   streamlog_out(ERROR) << "ILDPolygonBarrelMeasLayer::ConvertLCIOTrkHit Not implemented: exit(1) called from " << __FILE__ << "   line " << __LINE__ << std::endl; 
   exit(1);

@@ -84,8 +84,8 @@ TVector3 ILDRotatedTrapMeaslayer::HitToXv(const TVTrackHit &vht) const
   return TVector3(x,y,z);
 }
 
-void ILDRotatedTrapMeaslayer::CalcDhDa(const TVTrackHit &vht,
-                                       const TVector3   &xxv,
+void ILDRotatedTrapMeaslayer::CalcDhDa(const TVTrackHit &/*vht*/,
+                                       const TVector3   &/*xxv*/,
                                        const TKalMatrix &dxphiada,
                                        TKalMatrix &H)  const
 {

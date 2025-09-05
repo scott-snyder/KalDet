@@ -59,7 +59,7 @@ public:
   // Parrent's pure virtuals that must be implemented
   
   /** Global to Local coordinates */
-  virtual TKalMatrix XvToMv    (const TVTrackHit &ht,
+  virtual TKalMatrix XvToMv    (const TVTrackHit &/*ht*/,
                                 const TVector3   &xv) const
   { return this->XvToMv(xv); }
   
