@@ -57,7 +57,7 @@ public:
    Bool_t IsOnSurface(const TVector3 &xx) const;
 
    /** Convert LCIO Tracker Hit to an ILDCylinderHit  */
-   virtual ILDVTrackHit* ConvertLCIOTrkHit( EVENT::TrackerHit* trkhit) const {
+   virtual ILDVTrackHit* ConvertLCIOTrkHit( EVENT::TrackerHit* /*trkhit*/) const {
       
       streamlog_out( ERROR ) << "Don't use this, it's not implemented!";
       return NULL;
@@ -68,7 +68,7 @@ public:
                                         TVector3 &xx,
                                         Double_t &phi,
                                         Int_t    &CellID,
-                                        Int_t     mode,
+                                        Int_t     /*mode*/,
                                         Double_t  eps = 1.e-8) const {
                                            
      CellID = this->getCellIDs()[0]; // not multilayer
