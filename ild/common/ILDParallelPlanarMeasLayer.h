@@ -57,7 +57,7 @@ public:
                                        TVector3 &xx,
                                        Double_t &phi,
                                        Int_t    &CellID,
-                                       Int_t     mode,
+                                       Int_t     /*mode*/,
                                        Double_t  eps = 1.e-8) const {
   
     CellID = this->getCellIDs()[0]; // not multilayer

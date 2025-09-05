@@ -39,7 +39,7 @@ Int_t EXTPCMeasLayer::GetLayerID() const
   return fModuleRows.begin()->second;
 }
 
-TKalMatrix EXTPCMeasLayer::XvToMv(const TVector3 &xv, Int_t side) const
+TKalMatrix EXTPCMeasLayer::XvToMv(const TVector3 &xv, Int_t /*side*/) const
 {
   return XvToMv(xv); 
 }

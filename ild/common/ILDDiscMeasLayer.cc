@@ -47,8 +47,8 @@ TVector3 ILDDiscMeasLayer::HitToXv(const TVTrackHit &vht) const
   return TVector3(x,y,z);
 }
 
-void ILDDiscMeasLayer::CalcDhDa(const TVTrackHit &vht,
-                                const TVector3   &xxv,
+void ILDDiscMeasLayer::CalcDhDa(const TVTrackHit &/*vht*/,
+                                const TVector3   &/*xxv*/,
                                 const TKalMatrix &dxphiada,
                                 TKalMatrix &H)  const
 {
@@ -81,7 +81,7 @@ Int_t ILDDiscMeasLayer::CalcXingPointWith(const TVTrack  &hel,
                                           TVector3 &xx,
                                           Double_t &phi,
                                           Int_t     mode,
-                                          Double_t  eps) const{
+                                          Double_t  /*eps*/) const{
     
   phi = 0.0;
   
