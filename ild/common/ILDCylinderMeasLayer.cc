@@ -67,7 +67,7 @@ TVector3 ILDCylinderMeasLayer::HitToXv(const TVTrackHit &vht) const
 
 /** Calculate Projector Matrix */
 
-void ILDCylinderMeasLayer::CalcDhDa(const TVTrackHit &vht, // tracker hit not used here
+void ILDCylinderMeasLayer::CalcDhDa(const TVTrackHit &/*vht*/, // tracker hit not used here
                                     const TVector3   &xxv,
                                     const TKalMatrix &dxphiada,
                                     TKalMatrix &H) const
