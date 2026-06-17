@@ -71,10 +71,7 @@ namespace kaldet
      * Add another row on another module which lies on the same cylinder.
      */
     virtual void AddModuleRow(int module, int row);
-
-    // Avoid warnings about hiding base class method.
-    using TVMeasLayer::XvToMv;
-
+    
     /**
      * Get the measurement vector (mv) for this layer from a space point (xv)
      */
