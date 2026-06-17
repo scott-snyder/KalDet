@@ -1,14 +1,14 @@
 {
   "version": 5,
-  "prev": "d49590650091777326867ac9a3cb55145ee1b6aa",
-  "head": "90849dcaa59333d6344bc0371e2eb812eab6c58c",
+  "prev": "e95658792596c6d86f621175c83b2e57f3ca262b",
+  "head": "b1521e820c97e89e5dcf144b5588fc5f6efee595",
   "applied": [
     "gitignore",
-    "LibDeps"
+    "LibDeps",
+    "warn",
+    "clang"
   ],
   "unapplied": [
-    "warn",
-    "clang",
     "cmakewarn",
     "unused",
     "nosystem"
@@ -19,7 +19,7 @@
       "oid": "90849dcaa59333d6344bc0371e2eb812eab6c58c"
     },
     "clang": {
-      "oid": "381b2a79623ed9bdf4267d041b49112b01af8603"
+      "oid": "b1521e820c97e89e5dcf144b5588fc5f6efee595"
     },
     "cmakewarn": {
       "oid": "2c79c45bc7e511776fa8880fc556c1687177c05e"
@@ -34,7 +34,7 @@
       "oid": "b2414f6d9e25dbfca12abb8b6534dd613ea876de"
     },
     "warn": {
-      "oid": "aa76bd4fa0842564c62b0e283a4e45de7214981e"
+      "oid": "949b857262b3c79d2b8f2dd27b278511449be8e3"
     }
   }
 }
